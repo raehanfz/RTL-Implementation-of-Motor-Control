@@ -1,0 +1,266 @@
+$date
+	Sat Feb 28 19:39:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mac $end
+$var wire 16 ! out_mac [15:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 16 # bias_mac [15:0] $end
+$var reg 1 $ clk $end
+$var reg 16 % in_mac [15:0] $end
+$var reg 1 & rst $end
+$var reg 1 ' sel_mux $end
+$var reg 2 ( state [1:0] $end
+$var reg 16 ) w_mac [15:0] $end
+$scope module dut $end
+$var wire 16 * bias_mac [15:0] $end
+$var wire 1 $ clk $end
+$var wire 16 + in_mac [15:0] $end
+$var wire 1 & rst $end
+$var wire 1 ' sel_mux $end
+$var wire 2 , state [1:0] $end
+$var wire 16 - w_mac [15:0] $end
+$var wire 16 . out_mac [15:0] $end
+$var wire 32 / mux_accum [31:0] $end
+$var wire 32 0 mult_mux [31:0] $end
+$var wire 32 1 accum_relu [31:0] $end
+$var parameter 32 2 WIDTH $end
+$scope module u_accum $end
+$var wire 1 $ clk $end
+$var wire 1 & rst $end
+$var wire 2 3 state_accum [1:0] $end
+$var wire 32 4 in_accum [31:0] $end
+$var parameter 32 5 WIDTH $end
+$var reg 32 6 accum [31:0] $end
+$var reg 32 7 out_accum [31:0] $end
+$upscope $end
+$scope module u_mult $end
+$var wire 1 $ clk $end
+$var wire 16 8 in_mult [15:0] $end
+$var wire 1 & rst $end
+$var wire 16 9 w_mult [15:0] $end
+$var parameter 32 : WIDTH $end
+$var reg 32 ; out_mult [31:0] $end
+$upscope $end
+$scope module u_mux $end
+$var wire 16 < in_bias [15:0] $end
+$var wire 32 = in_prod [31:0] $end
+$var wire 1 ' sel $end
+$var parameter 32 > WIDTH $end
+$var reg 32 ? out_mux [31:0] $end
+$upscope $end
+$scope module u_relu $end
+$var wire 32 @ accumulated [31:0] $end
+$var parameter 32 A WIDTH $end
+$var reg 16 B out_relu [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 A
+b10000 >
+b10000 :
+b10000 5
+b10000 2
+b10000 "
+$end
+#0
+$dumpvars
+bx B
+bx @
+b0 ?
+bx =
+b0 <
+bx ;
+b0 9
+b0 8
+bx 7
+bx 6
+b0 4
+b0 3
+bx 1
+bx 0
+b0 /
+bx .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+1&
+b0 %
+0$
+b0 #
+bx !
+$end
+#5000
+b0 !
+b0 .
+b0 B
+b0 0
+b0 ;
+b0 =
+b0 1
+b0 7
+b0 @
+b0 6
+1$
+#10000
+0$
+#15000
+1$
+#20000
+0$
+#25000
+1$
+#30000
+0$
+#35000
+1$
+#40000
+0$
+#45000
+1$
+#46000
+b1000000000000000000000000 /
+b1000000000000000000000000 4
+b1000000000000000000000000 ?
+b1 (
+b1 ,
+b1 3
+b1000000000000 #
+b1000000000000 *
+b1000000000000 <
+b100000000000 %
+b100000000000 +
+b100000000000 8
+b1000000000000 )
+b1000000000000 -
+b1000000000000 9
+0&
+#50000
+0$
+#55000
+b1000000000000000000000000 6
+b100000000000000000000000 0
+b100000000000000000000000 ;
+b100000000000000000000000 =
+1$
+#56000
+b100000000000000000000000 /
+b100000000000000000000000 4
+b100000000000000000000000 ?
+1'
+b1111000000000000 )
+b1111000000000000 -
+b1111000000000000 9
+#60000
+0$
+#65000
+b11111111100000000000000000000000 /
+b11111111100000000000000000000000 4
+b11111111100000000000000000000000 ?
+b11111111100000000000000000000000 0
+b11111111100000000000000000000000 ;
+b11111111100000000000000000000000 =
+b1100000000000000000000000 6
+1$
+#66000
+b100000000000 )
+b100000000000 -
+b100000000000 9
+#70000
+0$
+#75000
+b10000000000000000000000 /
+b10000000000000000000000 4
+b10000000000000000000000 ?
+b1000000000000000000000000 6
+b10000000000000000000000 0
+b10000000000000000000000 ;
+b10000000000000000000000 =
+1$
+#76000
+b1111000000000000 %
+b1111000000000000 +
+b1111000000000000 8
+b1000000000000 )
+b1000000000000 -
+b1000000000000 9
+#80000
+0$
+#85000
+b11111111000000000000000000000000 /
+b11111111000000000000000000000000 4
+b11111111000000000000000000000000 ?
+b11111111000000000000000000000000 0
+b11111111000000000000000000000000 ;
+b11111111000000000000000000000000 =
+b1010000000000000000000000 6
+1$
+#86000
+b0 %
+b0 +
+b0 8
+b0 )
+b0 -
+b0 9
+#90000
+0$
+#95000
+b0 /
+b0 4
+b0 ?
+b10000000000000000000000 6
+b0 0
+b0 ;
+b0 =
+1$
+#96000
+b10 (
+b10 ,
+b10 3
+#100000
+0$
+#105000
+b10000000000 !
+b10000000000 .
+b10000000000 B
+b10000000000000000000000 1
+b10000000000000000000000 7
+b10000000000000000000000 @
+1$
+#106000
+b11 (
+b11 ,
+b11 3
+#110000
+0$
+#115000
+b0 6
+1$
+#116000
+b0 (
+b0 ,
+b0 3
+#120000
+0$
+#125000
+1$
+#130000
+0$
+#135000
+1$
+#140000
+0$
+#145000
+1$

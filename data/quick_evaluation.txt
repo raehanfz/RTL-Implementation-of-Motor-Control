@@ -1,0 +1,15 @@
+Speed_ref,Speed,Current,Bus_voltage,PWM (normalized dataset),PWM (system output)
+0.9166	 0.233789	 0.928883	 0.581081	 0.927273             0.8645
+0.9166   0.414357    0.827286    0.454054    0.859740             0.8559
+0.9166   0.413196    0.832928    0.421621    0.809091             0.8582
+0.8796   0.394808    0.854164    0.397297    0.818182             0.8621
+0.0624   0.232905    0.536177    0.605405    0.585714             0.6582
+
+Aggregated Statistical Metrics
+Sample Size (n): 5
+Mean Error (Bias): 0.019780
+Mean Absolute Error (MAE): 0.046425
+Mean Squared Error (MSE): 0.002710
+Root Mean Squared Error (RMSE): 0.052058
+Maximum Absolute Error: 0.072486 (Test 5)
+Minimum Absolute Error: 0.003840 (Test 2)
