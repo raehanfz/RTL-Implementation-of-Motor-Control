@@ -13,6 +13,6 @@ The accelerator computes inference for a fully connected neural network using a 
   * ROM: Stores pre-trained, quantized network weights and biases
   * RAM: Temporary storage for hidden layer activations
 
-## Statistical Metrics
+## Statistical Metrics (normalized dataset vs top level output)
 * Mean Absolute Error: 0.046425
 * Root Mean Squared Error: 0.052058
